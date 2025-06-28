@@ -23,12 +23,30 @@
 
 			#divModificador{
 				display: none;
+				
 			}
 
 			#containerCalculadoraElement{
 				display: flex;
+				flex-direction: row;
 
-			} #calculadoraColumnaUno, #calculadoraColumnaTres, #calculadoraColumnaCinco{
+			}
+			
+			@media only screen and (max-width: 1000px){
+					#containerCalculadoraElement{
+						flex-direction: column;
+
+					} #calculadoraColumnaUno, #calculadoraColumnaTres, #calculadoraColumnaCinco{
+						width: 100% !important;
+				  } #calculadoraColumnaDos, #calculadoraColumnaCuatro{
+					width: 100% !important;
+		    	
+					}
+		}
+			
+			
+			
+			#calculadoraColumnaUno, #calculadoraColumnaTres, #calculadoraColumnaCinco{
 				width: 30%;
 				text-align: center;
 				
